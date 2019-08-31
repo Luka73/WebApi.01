@@ -12,6 +12,7 @@ namespace Projeto.Services.Models
         public string Nome { get; set; }
 
         [Required(ErrorMessage = "O campo {0} não pode ser nulo.")]
+        [EmailAddress(ErrorMessage = "Email inválido")]
         public string Email { get; set; }
     }
 }

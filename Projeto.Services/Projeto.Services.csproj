@@ -100,6 +100,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\AutoMapperConfig.cs" />
     <Compile Include="App_Start\SwaggerConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\ClienteController.cs" />
@@ -107,8 +108,10 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\ClienteCadastroModel.cs" />
+    <Compile Include="Models\ClienteConsultaModel.cs" />
     <Compile Include="Models\ClienteEdicaoModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validations\ValidationUtil.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
